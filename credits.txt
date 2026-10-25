@@ -1,0 +1,13 @@
+CA1 - Rodrigo Araújo - 83681
+Class exercises adapted from existing student files and Brendan Munnelly tutorials:
+https://www.munnelly.com/dorset/
+Hero starter: https://www.munnelly.com/dorset/lessons/assets/downloads/hero-text
+Van Gogh and Irish tourism text/images: lecturer-provided class materials retained from the student folder. Tourism numbers are historical tutorial data.
+Home photograph: Kari Shea / Unsplash, https://unsplash.com/photos/1SAnrIxw5OY
+Hero photograph: lecturer-provided business.jpg from the Hero Blocks with Images tutorial.
+Backpackers illustration: lecturer-provided Adding Images tutorial download.
+Video: Claudia / Pexels, https://www.pexels.com/video/girl-writing-on-her-notebook-2086113/
+Poster: lecturer-provided Hero Blocks with Videos tutorial download.
+Favicon: laptop emoji selected via favicon.io; Twemoji graphics, CC BY 4.0. https://favicon.io/emoji-favicons/laptop/ and https://creativecommons.org/licenses/by/4.0/
+TailwindCSS browser CDN and Google Fonts follow the class tutorials.
+AI assistance was used to fix HTML, complete the exercises and explain the code.

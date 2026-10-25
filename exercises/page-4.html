@@ -3,61 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Vincent van Gogh</title>
-    <meta name="description" content="The Dutch post-impressionist whose works are characterised by bold colours and dramatic, impulsive and expressive brushwork.">
+    <meta name="description" content="An illustrated class exercise: Vincent van Gogh.">
+    <!-- Rodrigo Araújo 83681 -->
+    <link rel="icon" type="image/png" href="../assets/img/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <!-- TailwindCSS browser version, as used in the class tutorials. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
 
-    
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-<style type="text/tailwindcss">
-header {
-        @apply flex flex-col justify-around items-center w-full mx-auto
-            bg-blue-800
-            px-12 lg:px-60 py-8 lg:py-14;
-  
-    }
-    header h1 {
-        @apply text-6xl md:text-8xl text-white tracking-tighter text-center
-            mb-8 lg:mb-12;
-    }
+        body { @apply bg-slate-50 text-slate-900 font-sans; }
+        header { @apply bg-slate-900 text-white px-6 md:px-12 py-12 text-center; }
+        header > * { @apply max-w-3xl mx-auto; }
+        header h1 { @apply text-4xl md:text-6xl font-bold tracking-tight mb-5; }
+        header h2 { @apply text-xl md:text-2xl font-normal leading-relaxed; }
+        main { @apply max-w-3xl mx-auto; }
+        section { @apply px-6 md:px-10 py-8; }
+        h2 { @apply text-2xl md:text-3xl font-semibold tracking-tight mb-5; }
+        h3 { @apply text-xl md:text-2xl font-semibold mt-8 mb-4; }
+        p { @apply text-lg leading-relaxed mb-5; }
+        a { @apply text-blue-800 underline underline-offset-4 hover:text-blue-950 focus-visible:outline-2 focus-visible:outline-offset-4; }
+        header a { @apply text-white; }
+        ul { @apply list-disc pl-6 space-y-3 text-lg; }
+        img { @apply max-w-full h-auto my-6 rounded-lg; }
+        footer { @apply px-6 py-8 text-center bg-slate-200; }
+        footer p { @apply text-sm mb-2; }
+        .eyebrow { @apply text-sm font-semibold uppercase tracking-widest mb-4; }
+        .intro { @apply italic leading-relaxed; }
 
-    header h2 {
-        @apply text-2xl md:text-3xl/12 text-yellow-100 text-center;
-    }
-
-    section {
-        @apply bg-yellow-200
-            px-12 lg:px-60 
-            pt-4 pb-12 lg:pt-8 lg:pb-18;
-    }
-    section img { @apply mb-5 shadow-[8px_10px_8px_#888]; }
-
-    h3 { @apply text-3xl tracking-tight mt-10 lg:mt-12; }
-
-    p { @apply text-lg md:text-xl/8 mb-5; }
-
-    header *:last-child { @apply mb-0! }
-    section *:last-child { @apply mb-0! }
+        body { font-family: "Lato", sans-serif; }
+        h1, h2 { font-family: "Merriweather", serif; }
+        header { @apply bg-blue-900; }
+        main { @apply bg-amber-50; }
+        section img { @apply shadow-lg; }
+        nav { @apply mb-8; }
+        section h2 { @apply mt-10; }
 
     </style>
-
 </head>
-
-
-<body>
-
+<body id="top">
     <header>
+        <p class="eyebrow">HTML and CSS exercise 4</p>
         <h1>Vincent van Gogh</h1>
-
-        <h2>Among the most famous figures in Western art, Vincent van Gogh (1853-1890) was a Dutch post-impressionist painter who created about 2,100 artworks. They include landscapes, still lifes, portraits and self-portraits, and are characterised by bold colours and dramatic, impulsive and expressive brushwork.</h2>
-
+        <p class="intro">Vincent van Gogh was a Dutch painter. He is known for his strong colours and expressive brushwork.</p>
     </header>
+    <main><section>
+<nav aria-label="On this page"><h2>On This Page</h2><ul><li><a href="#topic-1">The Arles Years</a></li><li><a href="#topic-2">Life, Suffering and Death</a></li></ul></nav>
 
-    <main>
 
-    <section>
-
-        <h3>The Arles Years</h3>
+        <h2 id="topic-1">The Arles Years</h2>
         <p>Van Gogh's two years at Arles in France (1888–89) were one of his most artistically productive periods. He was enchanted by the local countryside and light; his works from this period are rich in yellow, ultramarine and mauve. Among the most well-known works of that time is an oil painting of his rented room, entitled <i>Bedroom in Arles</i>.</p>
 
         
@@ -72,7 +68,7 @@ header {
 
         <img src="assets/img/cafe-terrace-at-night-van-gogh.jpg" alt="The Cafe Terrace at Night, van Gogh">
 
-        <h3>Life, Suffering and Death</h3>
+        <h2 id="topic-2">Life, Suffering and Death</h2>
 
         <p>After his time at Arles, van Gogh moved to a former monastery at nearby Saint-Remy. The building's garden and surrounding countryside became the main subjects of his paintings. Some of his works from this time are characterised by swirls, such as <i>The Starry Night</i>.</p>
 
@@ -82,10 +78,14 @@ header {
 
         <p>Van Gogh is known to have sold only a single painting in his lifetime; for 400 francs or about €1,800 in today's value. In 1990, one of his paintings, <i>Portrait of Dr. Gachet</i>, fetched $82.5 million at auction.</p>
 
-        <p><b>Source</b>: <i>All text and images from Wikipedia</i>.</p>
+        <p><b>Class source:</b> text and artwork examples from the lecturer's tutorial and Wikipedia. <a href="https://en.wikipedia.org/wiki/Vincent_van_Gogh">Read about Vincent van Gogh</a>.</p>
 
-    </section>
-
-    </main>
+    
+        <p><a href="page-5.html">Explore Irish tourism</a></p>
+    </section></main>
+    <footer>
+        <p><a href="../index.html">Back to Home</a> · <a href="#top">Back to top</a></p>
+        <p>Rodrigo Araújo · Front-end Web Development 1 · CA1</p>
+    </footer>
 </body>
 </html>

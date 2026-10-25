@@ -1,53 +1,80 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Between 50 and 60 characters (including spaces)</title>
-    <meta name="description" content="Between 150 and 160 characters (including spaces). Like the title, this is important for search engines.">
-    <title>Web Page with Sections</title>
-    <meta name="description" content="A sample web page with multiple sections.">
-
-</head>    
+    <title>Six Sections | Rodrigo Araújo</title>
+    <meta name="description" content="Six semantic sections with contrasting TailwindCSS text and background colours.">
+    <!-- Rodrigo Araújo 83681 -->
+    <link rel="icon" type="image/png" href="../assets/img/favicon-32x32.png">
     
-<body>
+    <!-- TailwindCSS browser version, as used in the class tutorials. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
 
- <!-- Hero block -->
+        body { @apply bg-slate-50 text-slate-900 font-sans; }
+        header { @apply bg-slate-900 text-white px-6 md:px-12 py-12 text-center; }
+        header > * { @apply max-w-3xl mx-auto; }
+        header h1 { @apply text-4xl md:text-6xl font-bold tracking-tight mb-5; }
+        header h2 { @apply text-xl md:text-2xl font-normal leading-relaxed; }
+        main { @apply max-w-3xl mx-auto; }
+        section { @apply px-6 md:px-10 py-8; }
+        h2 { @apply text-2xl md:text-3xl font-semibold tracking-tight mb-5; }
+        h3 { @apply text-xl md:text-2xl font-semibold mt-8 mb-4; }
+        p { @apply text-lg leading-relaxed mb-5; }
+        a { @apply text-blue-800 underline underline-offset-4 hover:text-blue-950 focus-visible:outline-2 focus-visible:outline-offset-4; }
+        header a { @apply text-white; }
+        ul { @apply list-disc pl-6 space-y-3 text-lg; }
+        img { @apply max-w-full h-auto my-6 rounded-lg; }
+        footer { @apply px-6 py-8 text-center bg-slate-200; }
+        footer p { @apply text-sm mb-2; }
+        .eyebrow { @apply text-sm font-semibold uppercase tracking-widest mb-4; }
+        .intro { @apply italic leading-relaxed; }
+
+
+    </style>
+</head>
+<body id="top">
     <header>
-        <h1>Big heading</h1>
-        <h2>Smaller sub-heading</h2>
+        <p class="eyebrow">HTML and CSS exercise 3</p>
+        <h1>Six Sections</h1>
+        <h2>Structure, colour and readable text</h2>
     </header>
-
-    <!-- Main content of web page in sections -->
     <main>
-        <section>
-            <h2>Smaller Heading</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit nam debitis qui, odit doloribus architecto quod maiores consectetur laborum rerum, dolore consequatur explicabo eum sequi laboriosam totam repudiandae quaerat! Mollitia.<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime necessitatibus laborum voluptatem sed? Veritatis omnis inventore impedit quaerat ad ab nesciunt sed tempore et molestiae adipisci, quae asperiores sequi explicabo.</p>
-
+        <section class="bg-slate-100 text-slate-900" aria-labelledby="section-1">
+            <h2 id="section-1">Section 1</h2>
+            <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae neque sed erat facilisis tincidunt. Donec sit amet lectus ut erat tempor consequat.</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem. Aliquam erat volutpat. Praesent at nibh vitae justo egestas posuere non sed neque.</p>
         </section>
-
-        <section>
-            <h2>Smaller Heading</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum officia perferendis eligendi dolor dignissimos. Accusantium explicabo reiciendis necessitatibus nam quis dicta, in quaerat at vel odio totam commodi aliquam est.<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eius voluptas rerum debitis qui amet ducimus ullam voluptates itaque, esse porro similique aliquam saepe obcaecati. Ex nobis voluptate quas odio.</p>
-
+        <section class="bg-blue-100 text-blue-950" aria-labelledby="section-2">
+            <h2 id="section-2">Section 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae neque sed erat facilisis tincidunt. Donec sit amet lectus ut erat tempor consequat.</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem. Aliquam erat volutpat. Praesent at nibh vitae justo egestas posuere non sed neque.</p>
         </section>
-
-        <section>
-            <h2>Smaller Heading</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore pariatur ut veniam autem eaque repudiandae repellendus reprehenderit, ex perspiciatis animi suscipit quam sed iste distinctio quis magni! Quo, dicta saepe.<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque porro hic dicta sint illum quia totam amet! Itaque temporibus voluptatibus deserunt labore velit quisquam debitis. Quis quos labore quae neque.</p>
-
-            <p><a href="../index.html">Back to Home page</a></p>
-
+        <section class="bg-emerald-100 text-emerald-950" aria-labelledby="section-3">
+            <h2 id="section-3">Section 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae neque sed erat facilisis tincidunt. Donec sit amet lectus ut erat tempor consequat.</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem. Aliquam erat volutpat. Praesent at nibh vitae justo egestas posuere non sed neque.</p>
         </section>
-    
+        <section class="bg-amber-100 text-amber-950" aria-labelledby="section-4">
+            <h2 id="section-4">Section 4</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae neque sed erat facilisis tincidunt. Donec sit amet lectus ut erat tempor consequat.</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem. Aliquam erat volutpat. Praesent at nibh vitae justo egestas posuere non sed neque.</p>
+        </section>
+        <section class="bg-purple-100 text-purple-950" aria-labelledby="section-5">
+            <h2 id="section-5">Section 5</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae neque sed erat facilisis tincidunt. Donec sit amet lectus ut erat tempor consequat.</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem. Aliquam erat volutpat. Praesent at nibh vitae justo egestas posuere non sed neque.</p>
+        </section>
+        <section class="bg-rose-100 text-rose-950" aria-labelledby="section-6">
+            <h2 id="section-6">Section 6</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae neque sed erat facilisis tincidunt. Donec sit amet lectus ut erat tempor consequat.</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem. Aliquam erat volutpat. Praesent at nibh vitae justo egestas posuere non sed neque.</p>
+        </section>
     </main>
-    <!-- main content ends here -->
-    
-    </body>
-    
-    </html>
+    <footer>
+        <p><a href="../index.html">Back to Home</a> · <a href="#top">Back to top</a></p>
+        <p>Rodrigo Araújo · Front-end Web Development 1 · CA1</p>
+    </footer>
+</body>
+</html>

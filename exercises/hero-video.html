@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Block with Video | Rodrigo Araújo</title>
+    <meta name="description" content="A class exercise demonstrating a hero block with video.">
+    <!-- Rodrigo Araújo 83681 -->
+    <link rel="icon" type="image/png" href="../assets/img/favicon-32x32.png">
+    
+    <!-- TailwindCSS browser version, as used in the class tutorials. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+
+        body { @apply bg-slate-50 text-slate-900 font-sans; }
+        header { @apply bg-slate-900 text-white px-6 md:px-12 py-12 text-center; }
+        header > * { @apply max-w-3xl mx-auto; }
+        header h1 { @apply text-4xl md:text-6xl font-bold tracking-tight mb-5; }
+        header h2 { @apply text-xl md:text-2xl font-normal leading-relaxed; }
+        main { @apply max-w-3xl mx-auto; }
+        section { @apply px-6 md:px-10 py-8; }
+        h2 { @apply text-2xl md:text-3xl font-semibold tracking-tight mb-5; }
+        h3 { @apply text-xl md:text-2xl font-semibold mt-8 mb-4; }
+        p { @apply text-lg leading-relaxed mb-5; }
+        a { @apply text-blue-800 underline underline-offset-4 hover:text-blue-950 focus-visible:outline-2 focus-visible:outline-offset-4; }
+        header a { @apply text-white; }
+        ul { @apply list-disc pl-6 space-y-3 text-lg; }
+        img { @apply max-w-full h-auto my-6 rounded-lg; }
+        footer { @apply px-6 py-8 text-center bg-slate-200; }
+        footer p { @apply text-sm mb-2; }
+        .eyebrow { @apply text-sm font-semibold uppercase tracking-widest mb-4; }
+        .intro { @apply italic leading-relaxed; }
+
+        header { @apply relative min-h-[60vh] md:min-h-[80vh] flex flex-col justify-center px-6 md:px-12 py-16 overflow-hidden; }
+        header h1 { @apply relative z-10 text-4xl md:text-7xl; }
+        header h2 { @apply relative z-10 text-xl md:text-3xl; }
+        header::before { content: ""; @apply absolute inset-0 z-10 bg-black/65 pointer-events-none; }
+        header h1, header h2 { @apply relative z-20 text-shadow-lg pointer-events-none; }
+        header video { @apply absolute inset-0 w-full max-w-none h-full object-cover; }
+
+    </style>
+</head>
+<body id="top">
+    <!-- Adapted from Brendan Munnelly's hero-text tutorial sample. -->
+    <header>
+        <video autoplay muted loop playsinline controls preload="metadata" poster="assets/videos/hero-still.jpg" aria-label="Background video of a student writing in a notebook">
+            <source src="assets/videos/hero-video.mp4" type="video/mp4">
+            Your browser does not support this video.
+        </video>
+        <h1>Education for Life</h1>
+        <h2>Learning one step at a time</h2>
+    </header>
+    <main>
+        <section>
+            <h2>Hero Block with Video</h2>
+            <p>This example has a background video that repeats. A still image appears before the video starts. A dark layer makes the text easier to read.</p>
+            <p>Video: <a href="https://www.pexels.com/video/girl-writing-on-her-notebook-2086113/">Claudia on Pexels</a>. <a href="assets/videos/hero-video.mp4">Open the video</a>.</p>
+        </section>
+    </main>
+    <footer>
+        <p><a href="../index.html">Back to Home</a> · <a href="#top">Back to top</a></p>
+        <p>Rodrigo Araújo · Front-end Web Development 1 · CA1</p>
+    </footer>
+</body>
+</html>

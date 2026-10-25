@@ -3,48 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to my Webpage</title>
-    <meta name="google-site-verification" content="2YN-jz8J764PZs8ce9MjCxcH-sLGIOutfSRyBnhokRE" />
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PVXX306QYL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <title>Rodrigo Araújo | My Class Exercises</title>
+    <meta name="description" content="My name is Rodrigo Araújo. This website contains my HTML and CSS class exercises at Dorset College.">
+    <!-- Rodrigo Araújo 83681 -->
+    <link rel="icon" type="image/png" href="assets/img/favicon-32x32.png">
+    
+    <!-- TailwindCSS browser version, as used in the class tutorials. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
 
-  gtag('config', 'G-PVXX306QYL');
-</script>
+        body { @apply bg-slate-50 text-slate-900 font-sans; }
+        header { @apply bg-slate-900 text-white px-6 md:px-12 py-12 text-center; }
+        header > * { @apply max-w-3xl mx-auto; }
+        header h1 { @apply text-4xl md:text-6xl font-bold tracking-tight mb-5; }
+        header h2 { @apply text-xl md:text-2xl font-normal leading-relaxed; }
+        main { @apply max-w-3xl mx-auto; }
+        section { @apply px-6 md:px-10 py-8; }
+        h2 { @apply text-2xl md:text-3xl font-semibold tracking-tight mb-5; }
+        h3 { @apply text-xl md:text-2xl font-semibold mt-8 mb-4; }
+        p { @apply text-lg leading-relaxed mb-5; }
+        a { @apply text-blue-800 underline underline-offset-4 hover:text-blue-950 focus-visible:outline-2 focus-visible:outline-offset-4; }
+        header a { @apply text-white; }
+        ul { @apply list-disc pl-6 space-y-3 text-lg; }
+        img { @apply max-w-full h-auto my-6 rounded-lg; }
+        footer { @apply px-6 py-8 text-center bg-slate-200; }
+        footer p { @apply text-sm mb-2; }
+        .eyebrow { @apply text-sm font-semibold uppercase tracking-widest mb-4; }
+        .intro { @apply italic leading-relaxed; }
 
-<link rel="stylesheet" href="assets/img/favicons/">
 
-<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">    
-<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">    
-<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">    
-<link rel="manifest" href="assets/img/favicons/site.webmanifest">
-
+    </style>
 </head>
-
-<body>
-
+<body id="top">
     <header>
-
-    <h1>Welcome to my Homepage</h1>
-
-    <h2>Developer</h2>
-    <p>Welcome to my personal webpage. Here you can find information about my interests, projects, and contact details.</p>
-
-        <img src="assets/img/pexels-divinetechygirl-1181271.jpg"
-
+        <p class="eyebrow">Dorset College · CA1</p>
+        <h1>Welcome to My Website</h1>
+        <h2>Front-end Development Student</h2>
     </header>
-    <h2>Projects</h2>
-    <p><a href="exercises/soccer.html">Soccer Website</a></p>
-    <p><a href="exercises/laptops.html">Laptops</a></p>
-    <p><a href="exercises/page-1.html">A Tale of two Cities</a></p>
-    <p><a href="exercises/page-2.html">Purple Rain</a></p>
-    <p><a href="exercises/page-3.html">Web Page with section</a></p>
-    <p><a href="exercises/page-4.html">Vincent Van Gogh</a></p>
-    <p><a href="exercises/page-5.html"> Ireland's Top Five Visitor Attractions</a></p>
-    <p><a href="exercises/hair.html">Bloom Hair Salon</a></p>
-
+    <main>
+        <section aria-labelledby="about">
+            <h2 id="about">About This Website</h2>
+            <p class="intro">My name is Rodrigo Araújo. I study Computing at Dorset College. This website shows my class exercises.</p>
+            <img src="assets/img/developer.jpg" alt="An open laptop on a desk, ready for web development" width="1200" height="800">
+            <p>I am learning to build web pages with text, images and links. I am also learning to make pages work on phones and computers.</p>
+            <p class="text-sm">Photo: <a href="https://unsplash.com/photos/1SAnrIxw5OY">Kari Shea on Unsplash</a>.</p>
+        </section>
+        <section aria-labelledby="exercises">
+            <h2 id="exercises">HTML and CSS Exercises</h2>
+            <ul>
+                <li><a href="exercises/page-1.html">A Tale of Two Cities</a></li>
+                <li><a href="exercises/page-2.html">Purple Rain</a></li>
+                <li><a href="exercises/page-3.html">Six Sections</a></li>
+                <li><a href="exercises/page-4.html">Vincent van Gogh</a></li>
+                <li><a href="exercises/page-5.html">Irish Tourism</a></li>
+            </ul>
+        </section>
+        <section aria-labelledby="heroes">
+            <h2 id="heroes">Hero Block Exercises</h2>
+            <ul>
+                <li><a href="exercises/hero-text.html">Hero block with text</a></li>
+                <li><a href="exercises/hero-image.html">Hero block with an image</a></li>
+                <li><a href="exercises/hero-video.html">Hero block with a video</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p><a href="index.html">Back to Home</a> · <a href="#top">Back to top</a></p>
+        <p>Rodrigo Araújo · Front-end Web Development 1 · CA1</p>
+    </footer>
 </body>
 </html>
